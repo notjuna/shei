@@ -1,0 +1,465 @@
+<!-- Services & Pricing -->
+<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#10131a",
+              "on-error": "#690005",
+              "primary-container": "#1f0026",
+              "error-container": "#93000a",
+              "tertiary-container": "#260009",
+              "surface-tint": "#f9abff",
+              "secondary-fixed": "#a1efff",
+              "on-secondary-fixed-variant": "#004e59",
+              "background": "#10131a",
+              "surface-container-lowest": "#0b0e14",
+              "on-tertiary-fixed": "#400014",
+              "on-surface": "#e1e2eb",
+              "inverse-primary": "#9a25ae",
+              "primary-fixed": "#ffd6fe",
+              "on-secondary-container": "#004650",
+              "inverse-on-surface": "#2e3037",
+              "on-secondary": "#00363e",
+              "surface-container-highest": "#32353c",
+              "secondary": "#44d8f1",
+              "tertiary-fixed": "#ffd9de",
+              "surface": "#10131a",
+              "outline-variant": "#45474b",
+              "on-primary-fixed-variant": "#7b008f",
+              "inverse-surface": "#e1e2eb",
+              "surface-bright": "#363940",
+              "primary-fixed-dim": "#f9abff",
+              "on-tertiary-container": "#ec2165",
+              "secondary-container": "#00bcd4",
+              "surface-container-high": "#272a31",
+              "primary": "#f9abff",
+              "on-surface-variant": "#c6c6cb",
+              "on-secondary-fixed": "#001f25",
+              "on-primary": "#570066",
+              "surface-container": "#1d2026",
+              "on-primary-container": "#bc48ce",
+              "surface-variant": "#32353c",
+              "surface-container-low": "#191c22",
+              "secondary-fixed-dim": "#44d8f1",
+              "tertiary-fixed-dim": "#ffb2be",
+              "on-tertiary-fixed-variant": "#900038",
+              "on-error-container": "#ffdad6",
+              "on-tertiary": "#660025",
+              "outline": "#909095",
+              "error": "#ffb4ab",
+              "on-background": "#e1e2eb",
+              "tertiary": "#ffb2be",
+              "on-primary-fixed": "#35003f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .cosmic-bg {
+        background: radial-gradient(circle at 20% 30%, rgba(249, 171, 255, 0.05) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 70%, rgba(68, 216, 241, 0.05) 0%, transparent 40%),
+                    #10131a;
+      }
+      .glass-card {
+        background: rgba(50, 53, 60, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .cosmic-glow {
+        box-shadow: 0 0 32px rgba(68, 216, 241, 0.1);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 cosmic-bg min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xl bg-opacity-40 dark:bg-slate-950/40 shadow-[0_8px_32px_rgba(68,216,241,0.1)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-white font-['Manrope']" style="">Cosmic Editor</div>
+<div class="hidden md:flex items-center space-x-12 font-['Manrope'] tracking-tight font-light text-sm">
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/10 px-3 py-1 rounded-xl" href="#" style="">Home</a>
+<a class="text-fuchsia-300 border-b border-fuchsia-300 pb-1 hover:bg-white/10 px-3 py-1 rounded-xl" href="#" style="">Portfolio</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/10 px-3 py-1 rounded-xl" href="#" style="">Services</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/10 px-3 py-1 rounded-xl" href="#" style="">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-on-primary-container text-white px-6 py-2.5 rounded-xl font-headline font-bold text-sm tracking-wide active:scale-95 duration-200 ease-out hover:opacity-90" style="">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-[1440px] mx-auto">
+<!-- Header Section -->
+<header class="mb-16 space-y-4">
+<div class="flex items-center space-x-4">
+<span class="text-tertiary-fixed-dim font-label text-xs tracking-widest uppercase bg-tertiary-container/30 px-3 py-1 rounded-full" style="">Visual Showcase</span>
+<div class="h-[1px] w-12 bg-outline-variant/30"></div>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter max-w-4xl text-white" style="">
+                Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary" style="">Cinematic Dimensions</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl font-light leading-relaxed" style="">
+                Exploring the intersection of high-fidelity storytelling and cosmic aesthetics. Our portfolio spans from viral short-form to premium commercial productions.
+            </p>
+</header>
+<!-- Category Filters -->
+<div class="flex flex-wrap gap-3 mb-12">
+<button class="px-6 py-2 rounded-full bg-primary-container text-on-primary-container border border-primary/20 font-label text-sm font-medium transition-all" style="">All Projects</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label text-sm font-medium transition-all" style="">YouTube</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label text-sm font-medium transition-all" style="">Commercials</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-primary font-label text-sm font-medium transition-all" style="">TikTok/Reels</button>
+</div>
+<!-- Portfolio Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Project Card 1: Large Featured -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_0_40px_rgba(68,216,241,0.15)]">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Cinematic landscape with dramatic lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cinematic travel vlog aerial mountain landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuv4GD2qjfRdgQxoMvDu1ydaSw-jYCJUtIJja7ZGSJOXCC_Y02GfT8rEa3GZUqqH9RE9Y7B2-AxU-yMaxde39Qm5SiVcUzJgQd6FvYcy9VvOkrXMJu_PMbYQaXo22jzGpeRTEFB4opGiS6KjjiL1YXLQgWOb0L7jh5JRa3AaiNXiSb8D85-67U0galMYQkQuL6TjJ4EHNjdhrp9jsR2GLIIv_eMm9iNyacRkim7JH35Ylg7v_vjP9J_w2vqooOv03rq05Fy8ssMxX5" style="">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-card border-t border-white/5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<div class="flex justify-between items-end">
+<div class="space-y-2">
+<span class="text-secondary font-label text-xs tracking-widest uppercase" style="">Travel &amp; Lifestyle</span>
+<h3 class="text-2xl font-headline font-bold text-white" style="">Cinematic Travel Vlog</h3>
+<p class="text-on-surface-variant font-light text-sm max-w-md" style="">A visual journey through the Alps, focusing on atmospheric color grading and seamless transitions.</p>
+</div>
+<div class="material-symbols-outlined text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity translate-x-4 group-hover:translate-x-0 duration-500" style="">play_circle</div>
+</div>
+</div>
+</div>
+<!-- Project Card 2: Tech Review -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_0_40px_rgba(249,171,255,0.15)]">
+<div class="aspect-square md:aspect-auto h-full w-full overflow-hidden">
+<img alt="High tech futuristic gadgets on a desk" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-energy tech review setup with neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU1UvPMkZBfrbU8dBnto19LEO6qgVEU6LYBA1wsSqmuL-qdTA-Egi8lh8WL-rJQylrDTaflBog9mnb3buvJ6Kuz41DkZnNG7HpPYSuQJRSYUEeyEyDcyClz-3eXk9gOuV2E5-mRbOQWJ4EVMiuoQ3W9UyRYb2hEgG33_kH5tu5IcXI-g3AWG5-jqq_HMcj375m_tgG91EYgG-_v5imZMhiAkWDZ8Jh0hsl7Y1Za1IZK_QK-UuEPNW7mgRIdFCbLBdHz70j5HMnGvv-" style="">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full glass-card border-t border-white/5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-primary font-label text-xs tracking-widest uppercase" style="">YouTube Content</span>
+<h3 class="text-xl font-headline font-bold text-white mt-1" style="">High-Energy Tech Review</h3>
+<p class="text-on-surface-variant font-light text-xs mt-2" style="">Fast-paced cuts and motion graphics for a premium gadget showcase.</p>
+</div>
+</div>
+<!-- Project Card 3: TikTok/Reels -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500">
+<div class="aspect-[9/16] w-full overflow-hidden">
+<img alt="Person dancing with motion blur effect" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Dynamic portrait video for TikTok reels" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyPYc5hxJBg0svGcuSBeoAVcQ_uJzaw-AJBdgaThpglHJHKYOddYV2I6DCYY2ZdqU_r95tbPWPD3mcvl71dEN1cv82KCteP5qAq13LYtyPNtYKxCckxgC_5tCy013wLnTaCdjFTOnO_Hlmg48czTwF2XBSslJ879lXazWWy8AL9nfBNRQuHA2A5OX7P4HSvl0NWyFzpsr5GG9tcFm_K5SnUu9C_bXqY71uPhZklSL9iPNMKeoXMNqRJXCxfdws-eV6PS8oa0ER6hru" style="">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-6 w-full glass-card border-t border-white/5">
+<span class="text-tertiary font-label text-xs tracking-widest uppercase" style="">Social Media</span>
+<h3 class="text-xl font-headline font-bold text-white mt-1" style="">Viral Transition Reel</h3>
+<p class="text-on-surface-variant font-light text-xs mt-2" style="">Maximum engagement via rhythm-synced transitions.</p>
+</div>
+</div>
+<!-- Project Card 4: Commercial -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-[0_0_40px_rgba(68,216,241,0.15)]">
+<div class="aspect-video w-full overflow-hidden">
+<img alt="Close up of a luxury car interior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Luxury brand commercial product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt9AcxwnVM2Nl7q7eL8X52swaXVgT3IYOyZgYtq-ahmR1_CZwI2V9YebU11Pf40GLHeXtJG_MY6oD1m_WGYGhI-r5M3muCarf13uAfOqJ5-iw1xh-1HZBi65tv47_TCnMGxg5nGDRpCyLLZMr30Dg-RxlI6vQX1OF9hV1GNNHdh_bQxGp3D3rkFxNI9HAW4jJ_YSzNQZ9rdfLdGAhWyRAVaewKBTXEejs3E2annCVOLdQqZ6TXQXYBC72ran1R0PvH2Jfz67uw8dS0" style="">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full glass-card border-t border-white/5 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<div class="flex justify-between items-end">
+<div class="space-y-2">
+<span class="text-secondary font-label text-xs tracking-widest uppercase" style="">Commercial Production</span>
+<h3 class="text-2xl font-headline font-bold text-white" style="">Luxury Brand Identity</h3>
+<p class="text-on-surface-variant font-light text-sm max-w-md" style="">Minimalist aesthetic focused on texture, light, and product premiumization.</p>
+</div>
+<button class="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors" style="">
+<span class="material-symbols-outlined text-white" style="">north_east</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Action Button Contextual -->
+<div class="mt-16 flex justify-center">
+<button class="flex items-center space-x-3 px-8 py-4 rounded-full bg-surface-container-highest border border-outline-variant/30 text-white font-headline font-bold hover:bg-surface-bright transition-all group" style="">
+<span class="" style="">View More Explorations</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-[#0b0e14] w-full py-12 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-[1440px] mx-auto text-left">
+<div class="space-y-6">
+<div class="text-lg font-black text-white" style="">Cosmic Editor</div>
+<p class="text-slate-500 text-sm font-['Inter'] leading-relaxed" style="">
+                    Elevating digital narratives through advanced post-production and cosmic design principles. Based in the digital ether.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-cyan-400 font-['Inter'] text-xs tracking-widest uppercase" style="">Navigation</span>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="#" style="">Portfolio</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="#" style="">Process</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="#" style="">Studio</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-sm" href="#" style="">Contact</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="text-cyan-400 font-['Inter'] text-xs tracking-widest uppercase" style="">Connect</span>
+<div class="flex flex-wrap gap-4">
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs font-['Inter'] tracking-widest uppercase" href="#" style="">Instagram</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs font-['Inter'] tracking-widest uppercase" href="#" style="">TikTok</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors text-xs font-['Inter'] tracking-widest uppercase" href="#" style="">YouTube</a>
+</div>
+<div class="pt-8 text-slate-500 text-[10px] tracking-widest uppercase" style="">
+                    © 2026 Junaid er eidt. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!-- Landing Page -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Cosmic Editor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-dim": "#10131a",
+                "on-error": "#690005",
+                "primary-container": "#1f0026",
+                "error-container": "#93000a",
+                "tertiary-container": "#260009",
+                "surface-tint": "#f9abff",
+                "secondary-fixed": "#a1efff",
+                "on-secondary-fixed-variant": "#004e59",
+                "background": "#10131a",
+                "surface-container-lowest": "#0b0e14",
+                "on-tertiary-fixed": "#400014",
+                "on-surface": "#e1e2eb",
+                "inverse-primary": "#9a25ae",
+                "primary-fixed": "#ffd6fe",
+                "on-secondary-container": "#004650",
+                "inverse-on-surface": "#2e3037",
+                "on-secondary": "#00363e",
+                "surface-container-highest": "#32353c",
+                "secondary": "#44d8f1",
+                "tertiary-fixed": "#ffd9de",
+                "surface": "#10131a",
+                "outline-variant": "#45474b",
+                "on-primary-fixed-variant": "#7b008f",
+                "inverse-surface": "#e1e2eb",
+                "surface-bright": "#363940",
+                "primary-fixed-dim": "#f9abff",
+                "on-tertiary-container": "#ec2165",
+                "secondary-container": "#00bcd4",
+                "surface-container-high": "#272a31",
+                "primary": "#f9abff",
+                "on-surface-variant": "#c6c6cb",
+                "on-secondary-fixed": "#001f25",
+                "on-primary": "#570066",
+                "surface-container": "#1d2026",
+                "on-primary-container": "#bc48ce",
+                "surface-variant": "#32353c",
+                "surface-container-low": "#191c22",
+                "secondary-fixed-dim": "#44d8f1",
+                "tertiary-fixed-dim": "#ffb2be",
+                "on-tertiary-fixed-variant": "#900038",
+                "on-error-container": "#ffdad6",
+                "on-tertiary": "#660025",
+                "outline": "#909095",
+                "error": "#ffb4ab",
+                "on-background": "#e1e2eb",
+                "tertiary": "#ffb2be",
+                "on-primary-fixed": "#35003f"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .cosmic-bg {
+            background: radial-gradient(circle at 20% 30%, rgba(249, 171, 255, 0.05) 0%, transparent 40%),
+                        radial-gradient(circle at 80% 70%, rgba(68, 216, 241, 0.05) 0%, transparent 40%),
+                        #10131a;
+        }
+        .glass-panel {
+            background: rgba(50, 53, 60, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-xl bg-opacity-40 dark:bg-slate-950/40 shadow-[0_8px_32px_rgba(68,216,241,0.1)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-white font-headline" style="">Junaid er heda</div>
+<div class="hidden md:flex items-center gap-8 font-headline tracking-tight font-light text-sm">
+<a class="text-slate-300 hover:text-white transition-colors" href="#" style="">Home</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#" style="">Portfolio</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#" style="">Services</a>
+<a class="text-fuchsia-300 border-b border-fuchsia-300 pb-1" href="#" style="">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-on-primary-container text-white px-6 py-2 rounded-xl font-medium hover:scale-105 transition-transform active:scale-95 duration-200" style="">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="min-h-screen pt-32 pb-24 cosmic-bg overflow-hidden relative">
+<!-- Background Elements -->
+<div class="absolute top-1/4 -left-24 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -right-24 w-96 h-96 bg-secondary/10 rounded-full blur-[120px]"></div>
+<div class="max-w-[1440px] mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 relative z-10">
+<!-- Content Side -->
+<div class="lg:col-span-5 space-y-12">
+<div class="space-y-6">
+<span class="text-tertiary-fixed-dim uppercase tracking-[0.2em] font-label text-xs font-bold" style="">Initiate Transmission</span>
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold tracking-tighter leading-[0.9] text-white" style="">
+                        Let's build your <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary" style="">Universe.</span>
+</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md" style="">
+                        Transforming raw footage into cinematic narratives. Our editors are ready to bridge the gap between your vision and reality.
+                    </p>
+</div>
+<div class="space-y-8">
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary group-hover:shadow-[0_0_20px_rgba(68,216,241,0.3)] transition-all">
+<span class="material-symbols-outlined" style="">alternate_email</span>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-tertiary-fixed-dim" style="">Email Us</p>
+<p class="text-xl font-headline font-semibold text-white" style="">junaid@usa.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary group-hover:shadow-[0_0_20px_rgba(68,216,241,0.3)] transition-all">
+<span class="material-symbols-outlined" style="">share</span>
+</div>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-tertiary-fixed-dim" style="">Social Orbit</p>
+<div class="flex gap-4 mt-1">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#" style="">Instagram @junaid_b__</a>
+<span class="text-outline-variant" style="">/</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#" style="">TikTok</a>
+<span class="text-outline-variant" style="">/</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#" style="">YouTube</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Image/Texture -->
+<div class="hidden lg:block w-full h-48 rounded-xl overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent z-10"></div>
+<img alt="Cinematic Abstract Nebula" class="w-full h-full object-cover grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-60 transition-all duration-700 scale-110" data-alt="Abstract purple and blue cinematic nebula waves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhPVfAla6unrtlua74IY-DGOLpa3h0Rsnx5UbNF8zEQmXc_i-nKRx7ikcPJMKJLHZIw7L1eCwXyr8ZtdmNWItoZMAdlWPVDKwNFBr4o1hFzYpTvrZ11CO3QQT-U0Xz_WHyLy0N-g8h02tPr1kX061mXJszubFefNW0_MvkfE-JWdMt6N_Os0UuzrBmJ0nzvsjf0mXTO_J6v7ym0Po_AjaT3lTOcOpTurLrMqrA0C1Lk3ZNvpvTRAq4FxqjGKYIZ_7n_s0kc1UzeV0Z" style=""/>
+<div class="absolute bottom-4 left-4 z-20">
+<p class="text-[10px] uppercase tracking-[0.3em] text-white/50 font-label" style="">System Status: Active</p>
+</div>
+</div>
+</div>
+<!-- Form Side -->
+<div class="lg:col-span-7">
+<div class="glass-panel p-8 lg:p-12 rounded-[2rem] border border-white/5 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)]">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1" style="">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/50 text-white p-5 rounded-xl transition-all placeholder:text-outline-variant" placeholder="Commander Shepard" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1" style="">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/50 text-white p-5 rounded-xl transition-all placeholder:text-outline-variant" placeholder="shepard@normandy.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1" style="">Project Type</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/50 text-white p-5 rounded-xl appearance-none transition-all cursor-pointer">
+<option>Cinematic Commercial</option>
+<option>Music Video</option>
+<option>Social Content Suite</option>
+<option>Feature Documentary</option>
+<option>Other Cosmic Ventures</option>
+</select>
+<div class="absolute right-5 top-1/2 -translate-y-1/2 pointer-events-none text-outline">
+<span class="material-symbols-outlined" style="">expand_more</span>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant ml-1" style="">Your Vision</label>
+<textarea class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary/50 text-white p-5 rounded-xl transition-all placeholder:text-outline-variant resize-none" placeholder="Tell us about the story you want to tell..." rows="4"></textarea>
+</div>
+<button class="group relative w-full overflow-hidden bg-gradient-to-r from-primary to-on-primary-container p-[1px] rounded-xl transition-all hover:shadow-[0_0_40px_rgba(249,171,255,0.4)]" style="" type="submit">
+<div class="bg-surface-dim group-hover:bg-transparent transition-colors py-5 rounded-[11px] flex justify-center items-center gap-3">
+<span class="text-white font-headline font-bold tracking-tight text-lg" style="">Send Transmission</span>
+<span class="material-symbols-outlined text-white transition-transform group-hover:translate-x-1" style="">send</span>
+</div>
+</button>
+<p class="text-center text-[10px] text-outline font-label uppercase tracking-widest" style="">
+                            Estimated response time: 24 Earth Hours
+                        </p>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-[#0b0e14] w-full py-12 border-t border-white/5">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 max-w-[1440px] mx-auto text-left">
+<div class="space-y-4">
+<div class="text-lg font-black text-white" style="">Cosmic Editor</div>
+<p class="text-slate-500 font-body text-sm" style="">Elevating digital storytelling through celestial precision and artistic rebellion.</p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-['Inter'] text-cyan-400 tracking-widest uppercase" style="">Navigation</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 hover:text-cyan-400 transition-colors font-['Inter'] text-xs tracking-widest uppercase" href="#" style="">Instagram @junaid_b__</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors font-['Inter'] text-xs tracking-widest uppercase" href="#" style="">TikTok</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors font-['Inter'] text-xs tracking-widest uppercase" href="#" style="">YouTube</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-['Inter'] text-cyan-400 tracking-widest uppercase" style="">Legal</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 hover:text-cyan-400 transition-colors font-['Inter'] text-xs tracking-widest uppercase" href="#" style="">Privacy Policy</a>
+<a class="text-slate-500 hover:text-cyan-400 transition-colors font-['Inter'] text-xs tracking-widest uppercase" href="#" style="">Terms of Service</a>
+</div>
+<p class="text-slate-500 font-['Inter'] text-[10px] pt-4" style="">© 2024 Cosmic Editor. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
